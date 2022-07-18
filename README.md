@@ -1,4 +1,14 @@
 # 🟨 Javascript Exercises - Principiante
 
-- js
-- tests
+
+**⛏ Start**
+
+`git clone ` Clone repository
+
+`npm i ` Install dependencies
+
+`npm run test` Run tests
+
+---
+
+**👨‍💻Autor** : RafaelOviedo
