@@ -7,7 +7,7 @@ function minutesSeconds(minutes) {
   // minutesSeconds(5) => 300
   // minutesSeconds(3) => 180
   // Code:
-  // 1m = 60s 
+  // 1m = 60s
   return 60 * minutes;
 }
 
@@ -18,7 +18,10 @@ function sameLength(string1, string2) {
   // sameLength('Cintia', 'Rafael') => true
   // sameLength('Vanesa', 'Chayanne') => false
   // Code:
+  // Usamos length que muestra la longitud que tiene
+  return string1.length === string2.length ? true : false
 }
+
 
 function sayHello(name, age) {
   // Write a function that receives a string (name) and an integer (age)
