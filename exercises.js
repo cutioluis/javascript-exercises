@@ -19,9 +19,8 @@ function sameLength(string1, string2) {
   // sameLength('Vanesa', 'Chayanne') => false
   // Code:
   // Usamos length que muestra la longitud que tiene
-  return string1.length === string2.length ? true : false
+  return string1.length === string2.length ? true : false;
 }
-
 
 function sayHello(name, age) {
   // Write a function that receives a string (name) and an integer (age)
@@ -31,6 +30,7 @@ function sayHello(name, age) {
   // sayHello('Ramiro', 28) => 'Hi, my name is Ramiro. I am 28 years old.'
   // INTENTEN HACERLO CON BACKTICKS
   // Code:
+  return `Hi, my name is ${name}. I am ${age} years old.`;
 }
 
 function arraySum(array) {
@@ -41,6 +41,13 @@ function arraySum(array) {
   // arraySum([3, 4, 1]) => 8
   // Code:
   // NO HAGAN TRAMPA, NO VALE USAR REDUCE
+
+  let nevArray = 0;
+  for (let i = 0; i < array.length; i++) {
+    nevArray += array[i];
+  }
+  return nevArray;
+  s;
 }
 
 function findInArray(array, number) {
@@ -50,7 +57,10 @@ function findInArray(array, number) {
   // findInArray([5, 2, 4, 5], 2) => true
   // findInArray([3, 4, 1], 2) => false
   // Code:
+
+  return array.some((e) => e === number);
 }
+
 
 function average(array) {
   // Write a function that receives an array of integers as an argument (array)
@@ -61,6 +71,8 @@ function average(array) {
   // Code:
 }
 
+/* average([11, 07, 2022], 1);
+ */
 function randomNumbers(number) {
   // Write a function that receives an integer (between 1 and 99) as an argument (number)
   // return an array of random integers (do not repeat numbers) with "number" elements inside
