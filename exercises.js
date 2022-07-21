@@ -47,7 +47,6 @@ function arraySum(array) {
     nevArray += array[i];
   }
   return nevArray;
-  s;
 }
 
 function findInArray(array, number) {
@@ -57,10 +56,9 @@ function findInArray(array, number) {
   // findInArray([5, 2, 4, 5], 2) => true
   // findInArray([3, 4, 1], 2) => false
   // Code:
-
+  // some -> si alguno cumple devuelve true o false
   return array.some((e) => e === number);
 }
-
 
 function average(array) {
   // Write a function that receives an array of integers as an argument (array)
@@ -69,10 +67,17 @@ function average(array) {
   // average([1,2,3]) => 2
   // average([10, 20, 3]) => 11
   // Code:
+
+  // Para sacar el promedio es muy facil seguimos la siguiente formula
+  // 1.Sumar los numeros de las que nesitamos sacar el promedio 5 + 4 + 5  = 14
+  // 2. Divide por la catidad de numeros que tienes  = 3
+  // 3. 14 / 3 = 4.6
+
+  const longitud = arguments.length;
+  const suma = array.reduce((a, b) => a + b);
+  return suma / longitud;
 }
 
-/* average([11, 07, 2022], 1);
- */
 function randomNumbers(number) {
   // Write a function that receives an integer (between 1 and 99) as an argument (number)
   // return an array of random integers (do not repeat numbers) with "number" elements inside
