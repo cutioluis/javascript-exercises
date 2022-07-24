@@ -1,12 +1,13 @@
-function findInArray(array, number) {
-  // Write a function that receives an array of integers and a number as arguments (array, number)
-  // return true if the number is in the array, return false if not
+function randomNumbers(number) {
+  // Write a function that receives an integer (between 1 and 99) as an argument (number)
+  // return an array of random integers (do not repeat numbers) with "number" elements inside
   // ex:
-  // findInArray([5, 2, 4, 5], 2) => true
-  // findInArray([3, 4, 1], 2) => false
+  // randomNumbers(5); => [23, 11, 4, 76, 30]
+  // randomNumbers(3); => [3, 54, 18]
   // Code:
 
-  return console.log(array.find((e) => e == number ? true : false))
+  const a = [1, 2, 3]
+  console.log(a);
 }
 
-findInArray([1,3,4], 3)
+randomNumbers()
