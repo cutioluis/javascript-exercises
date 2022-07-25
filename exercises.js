@@ -105,6 +105,10 @@ function triangleArea(base, height) {
   // ex:
   // triangleArea(5, 10); => 25
   // triangleArea(3, 20); => 30
+
+  // Formula = b*h/2
+
+  return (base * height) / 2;
 }
 
 function isVowel(letter) {
@@ -115,6 +119,9 @@ function isVowel(letter) {
   // ex:
   // isVowel('a') => 'Is vowel';
   // isVowel(6) => 'Is not vowel';
+
+  const vowels = ["a", "e", "i", "o", "u"];
+  return letter.includes(vowels) ? "Is vowel" : "Is not vowel";
 }
 
 function findTheWord(string) {
@@ -124,6 +131,7 @@ function findTheWord(string) {
   // findTheWord('welcome to viseven') => true;
   // findTheWord('hi, my name is Agustin') => false;
   // Code:
+  return string.includes("viseven") ? true : false;
 }
 
 function createObject(name, surname, age, city) {

@@ -1,19 +1,14 @@
-function randomNumbers(number) {
-  // Write a function that receives an integer (between 1 and 99) as an argument (number)
-  // return an array of random integers (do not repeat numbers) with "number" elements inside
+function isVowel(letter) {
+  // Write a function that receives a letter (letter) as an argument
+  // if the letter is a vowel, should return "Is vowel", if not it should return "Is not vowel"
+  // In case the argument is not a string or if it's a string with more than one letter
+  // return "Incorrect data"
   // ex:
-  // randomNumbers(5); => [23, 11, 4, 76, 30]
-  // randomNumbers(3); => [3, 54, 18]
-  // Code:
+  // isVowel('a') => 'Is vowel';
+  // isVowel(6) => 'Is not vowel';
 
-  let nRandoms = [];
-
-  for (let i = 0; i < number; i++) {
-    let r = Math.random();
-    let r100 = r * 100;
-    nRandoms.push(Math.round(r100));
-  }
-
-  return nRandoms;
+  const vowels = ["a", "e", "i"];
+  return letter.includes(vowels);
 }
 
+console.log(isVowel("a"));
