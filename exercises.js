@@ -145,7 +145,9 @@ function createObject(name, surname, age, city) {
   //     city: 'Cordoba'
   // }
   // Code:
+  return {name: name, surname: surname, age: age, city: city}
 }
+
 
 function highestRating(arr) {
   // Write a function that receives an array (arr) with information of players as an argument
