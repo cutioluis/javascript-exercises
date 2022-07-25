@@ -86,10 +86,18 @@ function randomNumbers(number) {
   // randomNumbers(3); => [3, 54, 18]
   // Code:
 
-  const a = [1, 2, 3]
-  console.log(a);
-}
+  if (number < 1 || number > 99) return "Todo mal";
 
+  let nRandoms = [];
+
+  for (let i = 0; i < number; i++) {
+    let r = Math.random();
+    let r100 = r * 100;
+    nRandoms.push(Math.round(r100));
+  }
+
+  return nRandoms;
+}
 
 function triangleArea(base, height) {
   // Write a function that receives a number for the height (height) and another for the base (base)
@@ -97,10 +105,6 @@ function triangleArea(base, height) {
   // ex:
   // triangleArea(5, 10); => 25
   // triangleArea(3, 20); => 30
-
-  
-
-
 }
 
 function isVowel(letter) {
