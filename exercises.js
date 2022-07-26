@@ -121,7 +121,7 @@ function isVowel(letter) {
   // isVowel(6) => 'Is not vowel';
 
   const vowels = ["a", "e", "i", "o", "u"];
-  return letter.includes(vowels) ? "Is vowel" : "Is not vowel";
+  return letter.includes(vowels) ? "Is vowel" : "Incorrect";
 }
 
 function findTheWord(string) {
@@ -162,7 +162,7 @@ function highestRating(arr) {
   // highestRating(players) => 'The best player is Soledad, with 9999 points.'
   // Code:
 
-  let a = res.sort((a, b) => b.rating - a.rating);
+  let a = arr.sort((a, b) => b.rating - a.rating);
   return a.map((a) => {
     `The best player is ${a.name[0]} with ${a.rating[0]}`;
   });
@@ -181,6 +181,8 @@ function objectKeys(obj) {
   //
   // objectKeys(employee) => ['name', 'age', 'city', 'company']
   // Code:
+
+  return Object.keys(obj)
 }
 
 function showRespectToRiquelme(arr) {
@@ -210,6 +212,13 @@ function showRespectToRiquelme(arr) {
   //   { name: 'Simon'},
   // ]
   // Code:
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i].name === "Riquelme") {
+      arr[i].respect = "You are the best";
+      return arr;
+    }
+  }
+
 }
 
 // ---------------------------------------------------------------------------------------------------------------
