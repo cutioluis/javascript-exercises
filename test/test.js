@@ -1,14 +1,29 @@
-function isVowel(letter) {
-  // Write a function that receives a letter (letter) as an argument
-  // if the letter is a vowel, should return "Is vowel", if not it should return "Is not vowel"
-  // In case the argument is not a string or if it's a string with more than one letter
-  // return "Incorrect data"
+function highestRating(arr) {
+  // Write a function that receives an array (arr) with information of players as an argument
+  // return a string with the name of the player with highest rating and the rating
   // ex:
-  // isVowel('a') => 'Is vowel';
-  // isVowel(6) => 'Is not vowel';
+  // let players = [
+  //   { name: 'Cintia', rating: 2000 },
+  //   { name: 'Rafael', rating: 3000 },
+  //   { name: 'Agustin', rating: 1200 },
+  //   { name: 'Soledad', rating: 9999 },
+  // ]
+  //
+  // highestRating(players) => 'The best player is Soledad, with 9999 points.'
+  // Code:
 
-  const vowels = ["a", "e", "i"];
-  return letter.includes(vowels);
+  const res = [
+    { name: "Cintia", rating: 2000 },
+    { name: "Rafael", rating: 3000 },
+    { name: "Agustin", rating: 1200 },
+    { name: "Soledad", rating: 9999 },
+  ];
+
+  const a = res.sort((a, b) => b.rating - a.rating);
+  const b = a.map((e) => {
+    `The best player is ${e.name[0]} with ${e.rating[0]}`;
+  });
+  console.log(b);
 }
 
-console.log(isVowel("a"));
+highestRating();

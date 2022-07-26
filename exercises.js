@@ -145,9 +145,8 @@ function createObject(name, surname, age, city) {
   //     city: 'Cordoba'
   // }
   // Code:
-  return {name: name, surname: surname, age: age, city: city}
+  return { name: name, surname: surname, age: age, city: city };
 }
-
 
 function highestRating(arr) {
   // Write a function that receives an array (arr) with information of players as an argument
@@ -162,6 +161,11 @@ function highestRating(arr) {
   //
   // highestRating(players) => 'The best player is Soledad, with 9999 points.'
   // Code:
+
+  let a = res.sort((a, b) => b.rating - a.rating);
+  return a.map((a) => {
+    `The best player is ${a.name[0]} with ${a.rating[0]}`;
+  });
 }
 
 function objectKeys(obj) {
