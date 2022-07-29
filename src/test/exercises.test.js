@@ -13,7 +13,7 @@ const {
     highestRating,
     objectKeys,
     showRespectToRiquelme
-  } = require('../exercises.js');
+  } = require('../code/exercises');
 
   // do not touch
   // ---------------------------------------------------------------------------------------------------------------
